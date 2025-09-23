@@ -43,7 +43,7 @@ namespace loteria
 
             while (liczby.Count < 6)
             {
-                int liczba = rnd.Next(1, 49);
+                int liczba = rnd.Next(1, 50);
                 liczby.Add(liczba);
             }
 
@@ -59,7 +59,7 @@ namespace loteria
         /// <returns> tablica zlicza wystąpienia liczb w przedziale 1-49.</returns>
         static int[] PoliczWystapienia(List<int[]> zestawy)
         {
-            int[] wystapienia = new int[49]; 
+            int[] wystapienia = new int[50]; 
             foreach (var zestaw in zestawy)
             {
                 foreach (var liczba in zestaw)
