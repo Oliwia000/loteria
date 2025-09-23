@@ -33,7 +33,22 @@ namespace loteria
 
         Console.WriteLine("\nKoniec programu. Naciśnij Enter...");
         Console.ReadLine();
-
     }       
+        static int[] losujzestaw()
+        {
+            Random rnd = new Random ();
+            HashSet<int> liczby = new HashSet<int>();
+            while (liczby.Count < 6)
+            {
+
+            }
+
         }
-    }
+
+        static int[] policzwystapienia()
+        {
+
+        }
+
+     }
+ }
