@@ -40,7 +40,7 @@ namespace loteria
             HashSet<int> liczby = new HashSet<int>();
             while (liczby.Count < 6)
             {
-
+                 
             }
 
         }
