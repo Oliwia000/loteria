@@ -5,6 +5,9 @@ namespace loteria
 {
     class Program
     {
+        /// <summary>
+        /// 
+        /// </summary>
         static void Main()
         {
             Console.Write("Podaj liczbę zestawów do wygenerowania losowań: ");
@@ -29,6 +32,10 @@ namespace loteria
             Console.WriteLine("\nKoniec programu. Naciśnij Enter...");
             Console.ReadLine();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         static int[] LosujZestaw()
         {
             Random rnd = new Random();
@@ -45,9 +52,14 @@ namespace loteria
             Array.Sort(wynik);
             return wynik;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="zestawy"></param>
+        /// <returns></returns>
         static int[] PoliczWystapienia(List<int[]> zestawy)
         {
-            int[] wystapienia = new int[50]; 
+            int[] wystapienia = new int[49]; 
             foreach (var zestaw in zestawy)
             {
                 foreach (var liczba in zestaw)
