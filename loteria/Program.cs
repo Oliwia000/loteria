@@ -6,7 +6,7 @@ namespace loteria
     class Program
     {
         /// <summary>
-        /// 
+        /// Program do losowania losowych zestawów w przedziale od 1 do 49 i liczy ich wyswietlen.
         /// </summary>
         static void Main()
         {
@@ -33,9 +33,9 @@ namespace loteria
             Console.ReadLine();
         }
         /// <summary>
-        /// 
+        /// funkcja losuje jeden zestaw 6 losowych liczb w przedziale 1-49.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>tablica 6 licz całkowitych posortowanych. </returns>
         static int[] LosujZestaw()
         {
             Random rnd = new Random();
@@ -53,10 +53,10 @@ namespace loteria
             return wynik;
         }
         /// <summary>
-        /// 
+        /// fukcja liczy ile razy wyświetla się dana  liczba w zestawie.
         /// </summary>
-        /// <param name="zestawy"></param>
-        /// <returns></returns>
+        /// <param name="zestawy">lista zestawów liczb. </param>
+        /// <returns> tablica zlicza wystąpienia liczb w przedziale 1-49.</returns>
         static int[] PoliczWystapienia(List<int[]> zestawy)
         {
             int[] wystapienia = new int[49]; 
