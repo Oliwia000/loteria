@@ -10,7 +10,7 @@ namespace loteria
         /// </summary>
         static void Main()
         {
-            Console.Write("Podaj liczbę zestawów do wygenerowania losowań: ");
+            Console.Write("Podaj liczbę zestawów do wygenerowania losowań:\n");
             int ileZestawow = int.Parse(Console.ReadLine());
             List<int[]> zestawy = new List<int[]>();
             for (int i = 0; i < ileZestawow; i++)
