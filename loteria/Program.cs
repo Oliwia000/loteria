@@ -18,13 +18,22 @@ namespace loteria
                 int[] zestaw = losujzestaw();
                 zestawy.Add(zestaw);
                 Console.WriteLine("Losowanie"+ (i+1) +  ":");
-                Console.WriteLine();
-            }
-
-
-                
+              Console.WriteLine("Losowanie " + (i + 1) + ": ");
+               Console.WriteLine(string.Join(" ", zestaw));
         }
 
+        int[] wystapienia = policzwystapienia(zestawy);
 
+        Console.WriteLine("\nWystąpienia liczb:");
+        for (int i = 1; i <= 49; i++)
+        {
+            if (wystapienia[i] > 0)
+                Console.WriteLine("Liczba {0}: {1}", i, wystapienia[i]);
+        }
+
+        Console.WriteLine("\nKoniec programu. Naciśnij Enter...");
+        Console.ReadLine();
+
+    }       
+        }
     }
-}
